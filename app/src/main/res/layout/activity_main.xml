@@ -38,7 +38,7 @@
         android:layout_marginRight="69dp"
         android:background="#8BC34A"
         android:fontFamily="casual"
-        android:text="Qoutes"
+        android:text="Quotes"
         android:textSize="35dp" />
 
     <Button
