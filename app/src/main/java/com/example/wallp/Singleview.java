@@ -26,13 +26,17 @@ public class Singleview extends AppCompatActivity {
         Intent i = getIntent();
 
         // Selected image id
-        final int position = i.getExtras().getInt("id");
+        final int position = i.getExtras().getInt("id1");
+        final int position2 = i.getExtras().getInt("id2");
+
         final ImageAdapter imageAdapter = new ImageAdapter(this);
+
         final ImageAdapter2 imageAdapter2 = new ImageAdapter2(this);
 
         imageView.setImageResource(imageAdapter.mThumbIds[position]);
-        imageView2.setImageResource(imageAdapter2.quotes[position]);
-            set.setOnClickListener(new View.OnClickListener() {
+        imageView2.setImageResource(imageAdapter2.quotes[position2]);
+
+        set.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());

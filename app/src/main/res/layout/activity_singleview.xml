@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <ImageView
             android:id="@+id/singleview"
             android:layout_width="match_parent"
@@ -29,9 +30,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <ImageView
             android:id="@+id/singleview2"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </LinearLayout></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/singleview3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

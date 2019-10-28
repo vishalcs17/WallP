@@ -12,8 +12,8 @@ import android.widget.ImageView;
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
 
-    public ImageAdapter(Context c){
-        mContext = c;
+    ImageAdapter(Context c1){
+        mContext = c1;
     }
 
 
@@ -34,21 +34,20 @@ public class ImageAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        ImageView imageView;
+        ImageView imageView1;
 
         if(view == null){
-            imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
+            imageView1 = new ImageView(mContext);
+            imageView1.setLayoutParams(new GridView.LayoutParams(250, 250));
         }
         else
         {
-            imageView = (ImageView) view;
+            imageView1 = (ImageView) view;
         }
-        imageView.setImageResource(mThumbIds[i]);
-        return imageView;
+        imageView1.setImageResource(mThumbIds[i]);
+        return imageView1;
     }
-
-    public Integer[] mThumbIds = {
+    Integer[] mThumbIds = {
             R.drawable.p1, R.drawable.p2,
             R.drawable.p3, R.drawable.w2,
             R.drawable.p1, R.drawable.p3};
@@ -58,9 +57,9 @@ public class ImageAdapter extends BaseAdapter {
 
 class  ImageAdapter2 extends BaseAdapter{
     private Context mContext2;
-    public ImageAdapter2(Context c)
+    ImageAdapter2(Context c2)
     {
-        mContext2 = c;
+        mContext2 = c2;
     }
 
     @Override
@@ -69,8 +68,8 @@ class  ImageAdapter2 extends BaseAdapter{
     }
 
     @Override
-    public Object getItem(int position) {
-        return position;
+    public Object getItem(int position2) {
+        return position2;
     }
 
     @Override
@@ -83,7 +82,7 @@ class  ImageAdapter2 extends BaseAdapter{
         ImageView imageView;
         if(view == null){
             imageView = new ImageView(mContext2);
-            imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
+            imageView.setLayoutParams(new GridView.LayoutParams(250, 250));
         }
         else
         {
@@ -92,9 +91,53 @@ class  ImageAdapter2 extends BaseAdapter{
         imageView.setImageResource(quotes[i]);
         return imageView;
     }
-    public Integer[] quotes = {
+    Integer[] quotes = {
             R.drawable.q1, R.drawable.q2,
             R.drawable.q3, R.drawable.q4,
             R.drawable.q1, R.drawable.q2};
+}
+
+//Image Adapter for QUOTES activity....
+
+class  ImageAdapter3 extends BaseAdapter{
+    private Context mContext3;
+    ImageAdapter3(Context c3)
+    {
+        mContext3 = c3;
+    }
+
+    @Override
+    public int getCount() {
+        return animals.length;
+    }
+
+    @Override
+    public Object getItem(int position3) {
+        return position3;
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        ImageView imageView;
+        if(view == null){
+            imageView = new ImageView(mContext3);
+            imageView.setLayoutParams(new GridView.LayoutParams(250, 250));
+        }
+        else
+        {
+            imageView = (ImageView) view;
+        }
+        imageView.setImageResource(animals[i]);
+        return imageView;
+    }
+    Integer[] animals = {
+            R.drawable.a1, R.drawable.a2,
+            R.drawable.a3, R.drawable.a1,
+            R.drawable.a2, R.drawable.a3};
 }
 

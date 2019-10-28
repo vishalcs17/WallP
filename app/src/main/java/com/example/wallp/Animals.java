@@ -8,26 +8,23 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-public class Landscape extends AppCompatActivity {
+public class Animals extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_landscape);
+        setContentView(R.layout.activity_animals);
 
-        GridView gridview = findViewById(R.id.gridview);
-        gridview.setAdapter(new ImageAdapter(this));
+        GridView gridView = findViewById(R.id.gridview3);
+        gridView.setAdapter(new ImageAdapter3(this));
 
-        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(),Singleview.class);
-                intent.putExtra("id1",i);
+                intent.putExtra("id3",i);
                 startActivity(intent);
             }
         });
-
-
-
     }
 }

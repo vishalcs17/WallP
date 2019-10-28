@@ -14,13 +14,15 @@ public class Quote extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quote);
+
         GridView gridView = findViewById(R.id.gridview2);
         gridView.setAdapter(new ImageAdapter2(this));
+
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(),Singleview.class);
-                intent.putExtra("id",i);
+                intent.putExtra("id2",i);
                 startActivity(intent);
             }
         });
