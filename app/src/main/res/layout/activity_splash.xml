@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash"
-    android:background="#FFEB3B">
-
-
+    android:background="@drawable/gradient"
+    tools:context=".Splash">
     <ImageView
         android:id="@+id/spl"
         android:layout_width="312dp"
