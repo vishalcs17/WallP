@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -28,9 +29,9 @@ public class Singleview extends AppCompatActivity {
         final int position = i.getExtras().getInt("id1");
 
         final ImageAdapter imageAdapter = new ImageAdapter(this);
-
         imageView.setImageResource(imageAdapter.mThumbIds[position]);
-            set.setOnClickListener(new View.OnClickListener() {
+
+        set.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());
