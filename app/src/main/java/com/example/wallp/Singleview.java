@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class Singleview extends AppCompatActivity {
     Button set;
-    ImageView imageView, imageView2;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,34 +22,26 @@ public class Singleview extends AppCompatActivity {
         setContentView(R.layout.activity_singleview);
         set = findViewById(R.id.set);
         imageView = findViewById(R.id.singleview);
-        imageView2 = findViewById(R.id.singleview2);
         Intent i = getIntent();
 
         // Selected image id
         final int position = i.getExtras().getInt("id1");
-        final int position2 = i.getExtras().getInt("id2");
 
         final ImageAdapter imageAdapter = new ImageAdapter(this);
 
-        final ImageAdapter2 imageAdapter2 = new ImageAdapter2(this);
-
         imageView.setImageResource(imageAdapter.mThumbIds[position]);
-        imageView2.setImageResource(imageAdapter2.quotes[position2]);
-
-        set.setOnClickListener(new View.OnClickListener() {
+            set.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());
-                    try{
+                    try {
                         wallpaperManager.setResource(imageAdapter.mThumbIds[position]);
-                        Toast.makeText(Singleview.this,"Wallpaper Updated Successful",Toast.LENGTH_SHORT).show();
-                    }
-                    catch (IOException e)
-                    {
+                        Toast.makeText(Singleview.this, "Wallpaper Updated Successful", Toast.LENGTH_SHORT).show();
+                    } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
             });
     }
-}
+    }
 

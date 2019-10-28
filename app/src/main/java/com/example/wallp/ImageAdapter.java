@@ -97,7 +97,7 @@ class  ImageAdapter2 extends BaseAdapter{
             R.drawable.q1, R.drawable.q2};
 }
 
-//Image Adapter for QUOTES activity....
+//Image Adapter for ANIMALS activity....
 
 class  ImageAdapter3 extends BaseAdapter{
     private Context mContext3;
