@@ -24,25 +24,23 @@ public class Singleview extends AppCompatActivity {
         set = findViewById(R.id.set);
         imageView = findViewById(R.id.singleview);
         Intent i = getIntent();
-
         // Selected image id
-        final int position = i.getExtras().getInt("id1");
 
+        final int position = i.getExtras().getInt("id1");
         final ImageAdapter imageAdapter = new ImageAdapter(this);
         imageView.setImageResource(imageAdapter.mThumbIds[position]);
-
         set.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());
                     try {
                         wallpaperManager.setResource(imageAdapter.mThumbIds[position]);
-                        Toast.makeText(Singleview.this, "Wallpaper Updated Successful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Singleview.this,"Wallpaper Updated Successful",Toast.LENGTH_SHORT).show();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
             });
     }
-    }
+}
 
