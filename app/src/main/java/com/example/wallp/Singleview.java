@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -30,21 +31,21 @@ public class Singleview extends AppCompatActivity {
         final ImageAdapter2 imageAdapter2 = new ImageAdapter2(this);
 
         imageView.setImageResource(imageAdapter.mThumbIds[position]);
-
         imageView2.setImageResource(imageAdapter2.quotes[position]);
-
-        set.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());
-                try{
-                    wallpaperManager.setResource(imageAdapter.mThumbIds[position]);
+            set.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());
+                    try{
+                        wallpaperManager.setResource(imageAdapter.mThumbIds[position]);
+                        Toast.makeText(Singleview.this,"Wallpaper Updated Successful",Toast.LENGTH_SHORT).show();
+                    }
+                    catch (IOException e)
+                    {
+                        e.printStackTrace();
+                    }
                 }
-                catch (IOException e)
-                {
-                    e.printStackTrace();
-                }
-            }
-        });
+            });
     }
 }
+
