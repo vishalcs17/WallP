@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Animals"></activity>
+        <activity android:name=".Singleview3"></activity>
+        <activity android:name=".Singleview2" />
+        <activity android:name=".Animals" />
         <activity android:name=".Quote" />
         <activity android:name=".Singleview" />
         <activity android:name=".Landscape" />

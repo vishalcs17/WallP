@@ -21,7 +21,7 @@ public class Animals extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(),Singleview.class);
+                Intent intent = new Intent(getApplicationContext(),Singleview3.class);
                 intent.putExtra("id3",i);
                 startActivity(intent);
             }

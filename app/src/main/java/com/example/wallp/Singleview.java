@@ -25,7 +25,6 @@ public class Singleview extends AppCompatActivity {
         imageView = findViewById(R.id.singleview);
         Intent i = getIntent();
         // Selected image id
-
         final int position = i.getExtras().getInt("id1");
         final ImageAdapter imageAdapter = new ImageAdapter(this);
         imageView.setImageResource(imageAdapter.mThumbIds[position]);
