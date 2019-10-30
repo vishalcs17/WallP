@@ -1,14 +1,21 @@
 package com.example.wallp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button b1,b2,b3;
+    TextView about;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         b1=findViewById(R.id.t1);
         b2=findViewById(R.id.t2);
         b3=findViewById(R.id.t3);
+        about=findViewById(R.id.aboutus);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
