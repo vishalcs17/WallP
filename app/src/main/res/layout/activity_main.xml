@@ -8,10 +8,18 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Categories"
+        app:titleTextColor="#000" />
+
     <LinearLayout
         android:id="@+id/line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
         android:orientation="vertical">
 
         <Button
@@ -50,17 +58,22 @@
             android:text="animals"
             android:textSize="35dp" />
 
+        <Button
+            android:id="@+id/t4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="casual"
+            android:text="animated"
+            android:textSize="35dp" />
+
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/aboutus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/line1"
-        android:text="@string/aboutus"
-        android:textColor="#000"
-        android:textSize="20dp" />
 
 
 </RelativeLayout>
