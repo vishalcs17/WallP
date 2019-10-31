@@ -8,18 +8,21 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <TextView
+        android:id="@+id/detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Categories"
-        app:titleTextColor="#000" />
+        android:background="@color/colorPrimary"
+        android:text="About Us"
+        android:textSize="25dp"
+        android:textColor="#ffff"
+        android:textAlignment="center"/>
 
     <LinearLayout
+        android:layout_below="@+id/detail"
         android:id="@+id/line1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <Button
@@ -59,19 +62,15 @@
             android:textSize="35dp" />
 
         <Button
-            android:id="@+id/t4"
-            android:layout_width="300dp"
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@drawable/buttonshape"
-            android:fontFamily="casual"
-            android:text="animated"
-            android:textSize="35dp" />
-
+            android:background="#A2A1A1"
+            android:text="Exit"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

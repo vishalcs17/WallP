@@ -6,14 +6,18 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1,b2,b3,b4;
+    Button b1,b2,b3,exit;
+    TextView textView;
 
 
     @Override
@@ -23,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
         b1=findViewById(R.id.t1);
         b2=findViewById(R.id.t2);
         b3=findViewById(R.id.t3);
+        exit=findViewById(R.id.exit);
+        textView=findViewById(R.id.detail);
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,About.class);
+                startActivity(intent);
+            }
+        });
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,17 +63,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        b4.setOnClickListener(new View.OnClickListener() {
+        exit.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("NewApi")
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,Animate.class);
-                startActivity(i);
+                finishAffinity();
             }
         });
-
-
-
-
-
     }
 }

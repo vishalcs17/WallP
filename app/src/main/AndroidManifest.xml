@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Singleview4"></activity>
-        <activity android:name=".Animate" />
+        <activity android:name=".About"></activity>
         <activity android:name=".Singleview3" />
         <activity android:name=".Singleview2" />
         <activity android:name=".Animals" />

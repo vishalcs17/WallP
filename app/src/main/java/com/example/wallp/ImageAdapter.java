@@ -141,46 +141,4 @@ class  ImageAdapter3 extends BaseAdapter{
             R.drawable.a2, R.drawable.a3};
 }
 
-class ImageAdapter4 extends BaseAdapter{
-    private Context mContext4;
-    ImageAdapter4(Context c4)
-    {
-        mContext4 = c4;
-    }
-
-    @Override
-    public int getCount() {
-        return animate.length;
-    }
-
-    @Override
-    public Object getItem(int i) {
-        return i;
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return i;
-    }
-
-    @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        ImageView imageView;
-        if(view == null){
-            imageView = new ImageView(mContext4);
-            imageView.setLayoutParams(new GridView.LayoutParams(250, 250));
-        }
-        else
-        {
-            imageView = (ImageView) view;
-        }
-        imageView.setImageResource(animate[i]);
-        return imageView;
-    }
-    Integer[] animate={
-            R.drawable.c1,R.drawable.c2,
-            R.drawable.c3,R.drawable.c4,
-            R.drawable.c5,R.drawable.c6};
-    }
-
 

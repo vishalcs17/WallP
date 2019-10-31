@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">WallP</string>
-    <string name="about">Box has a very well-equipped page with some unique features.
-        The first is a simple paragraph that actually acts as a microcosm of a great page.
-        In 5 sentences, it has a mission statement, explains their value, tells a story, gives credibility through users,
-        and ends with a call-to-action to sign up. All of it is addressed to you, the reader.</string>
+    <string name="about">WallP has a very well-equipped page.
+        The first is a simple Category page that actually acts as a user-friendly interface.
+        In other, it has a SingleView of the selected item, allow user to set wallpaper.</string>
     <string name="aboutus">AboutUs</string>
 </resources>
