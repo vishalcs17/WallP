@@ -11,11 +11,21 @@
         android:id="@+id/set2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:text="SET"
+        android:background="@drawable/buttonshape"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/share2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/buttonshape"
+        android:text="Share"
         android:textSize="30dp" />
 
+
     <LinearLayout
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">

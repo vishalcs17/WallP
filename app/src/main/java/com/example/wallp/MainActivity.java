@@ -1,22 +1,15 @@
 package com.example.wallp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1,b2,b3,exit;
+    Button b1,b2,b3,b4,exit;
     TextView textView;
 
 
@@ -27,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         b1=findViewById(R.id.t1);
         b2=findViewById(R.id.t2);
         b3=findViewById(R.id.t3);
+        b4=findViewById(R.id.t4);
         exit=findViewById(R.id.exit);
         textView=findViewById(R.id.detail);
 
@@ -59,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this,Animals.class);
+                startActivity(i);
+            }
+        });
+
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,Animated.class);
                 startActivity(i);
             }
         });

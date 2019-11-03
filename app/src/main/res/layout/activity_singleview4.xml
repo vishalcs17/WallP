@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Singleview3">
-
+    tools:context=".Singleview4">
 
     <Button
-        android:id="@+id/set3"
+        android:id="@+id/set4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -18,7 +17,7 @@
         android:textSize="30dp" />
 
     <Button
-        android:id="@+id/share3"
+        android:id="@+id/share4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -34,7 +33,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/singleview3"
+            android:id="@+id/singleview4"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>

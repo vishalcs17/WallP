@@ -141,4 +141,49 @@ class  ImageAdapter3 extends BaseAdapter{
             R.drawable.a2, R.drawable.a3};
 }
 
+//Image Adapter for ANIMATED activity....
+
+class  ImageAdapter4 extends BaseAdapter{
+    private Context mContext4;
+    ImageAdapter4(Context c4)
+    {
+        mContext4 = c4;
+    }
+
+    @Override
+    public int getCount() {
+        return animated.length;
+    }
+
+    @Override
+    public Object getItem(int position4) {
+        return position4;
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        ImageView imageView;
+        if(view == null){
+            imageView = new ImageView(mContext4);
+            imageView.setLayoutParams(new GridView.LayoutParams(250, 250));
+        }
+        else
+        {
+            imageView = (ImageView) view;
+        }
+        imageView.setImageResource(animated[i]);
+        return imageView;
+    }
+    Integer[] animated = {
+            R.drawable.c1, R.drawable.c2,
+            R.drawable.c3, R.drawable.c4,
+            R.drawable.c5, R.drawable.c6 };
+}
+
+
 
