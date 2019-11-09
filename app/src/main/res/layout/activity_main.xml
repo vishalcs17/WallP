@@ -65,6 +65,20 @@
             android:text="animated"
             android:textSize="35dp" />
 
+        <Button
+            android:id="@+id/t5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="casual"
+            android:text="User album"
+            android:textSize="35dp" />
+
 
         <TextView
             android:id="@+id/detail"
@@ -88,6 +102,12 @@
             android:textColor="#ffff"
             android:textSize="20dp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/targeturi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
 
     </LinearLayout>
 
