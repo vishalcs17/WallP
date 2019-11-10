@@ -19,7 +19,7 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
     Button b1,b2,b3,b4,b5,exit;
-    TextView textView,textTargetUri;
+    TextView textView,textTargetUri,feedback;
 
 
     @Override
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         b3=findViewById(R.id.t3);
         b4=findViewById(R.id.t4);
         b5=findViewById(R.id.t5);
+        feedback=findViewById(R.id.feedback);
         exit=findViewById(R.id.exit);
         textView=findViewById(R.id.detail);
         textTargetUri=findViewById(R.id.targeturi);
@@ -82,6 +83,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(intent,0);
 
+            }
+        });
+
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,Feedback.class);
+                startActivity(i);
             }
         });
 
