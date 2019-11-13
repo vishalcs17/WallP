@@ -48,9 +48,9 @@ public class ImageAdapter extends BaseAdapter {
         return imageView1;
     }
     Integer[] mThumbIds = {
-            R.drawable.p1, R.drawable.p2,
-            R.drawable.p3, R.drawable.w2,
-            R.drawable.p1, R.drawable.p3};
+            R.drawable.land1, R.drawable.land2,
+            R.drawable.land3, R.drawable.land4,
+            R.drawable.land5, R.drawable.land6};
 }
 
 //Image Adapter for QUOTES activity....
