@@ -29,11 +29,13 @@ public class Singleview extends AppCompatActivity {
         set = findViewById(R.id.set);
         imageView = findViewById(R.id.singleview);
         sharebutton = findViewById(R.id.share1);
+
         Intent i = getIntent();
         // Selected image id
         final int position = i.getExtras().getInt("id1");
         final ImageAdapter imageAdapter = new ImageAdapter(this);
         imageView.setImageResource(imageAdapter.mThumbIds[position]);
+
         set.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
