@@ -38,7 +38,7 @@ public class ImageAdapter extends BaseAdapter {
 
         if(view == null){
             imageView1 = new ImageView(mContext);
-            imageView1.setLayoutParams(new GridView.LayoutParams(250, 250));
+            imageView1.setLayoutParams(new GridView.LayoutParams(500, 500));
         }
         else
         {
