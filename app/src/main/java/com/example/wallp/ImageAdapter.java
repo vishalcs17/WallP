@@ -38,7 +38,7 @@ public class ImageAdapter extends BaseAdapter {
 
         if(view == null){
             imageView1 = new ImageView(mContext);
-            imageView1.setLayoutParams(new GridView.LayoutParams(500, 500));
+            imageView1.setLayoutParams(new GridView.LayoutParams(1200, 1200));
         }
         else
         {
@@ -82,7 +82,7 @@ class  ImageAdapter2 extends BaseAdapter{
         ImageView imageView;
         if(view == null){
             imageView = new ImageView(mContext2);
-            imageView.setLayoutParams(new GridView.LayoutParams(250, 250));
+            imageView.setLayoutParams(new GridView.LayoutParams(1200, 1200));
         }
         else
         {
@@ -126,7 +126,7 @@ class  ImageAdapter3 extends BaseAdapter{
         ImageView imageView;
         if(view == null){
             imageView = new ImageView(mContext3);
-            imageView.setLayoutParams(new GridView.LayoutParams(250, 250));
+            imageView.setLayoutParams(new GridView.LayoutParams(1200, 1200));
         }
         else
         {
@@ -170,7 +170,7 @@ class  ImageAdapter4 extends BaseAdapter{
         ImageView imageView;
         if(view == null){
             imageView = new ImageView(mContext4);
-            imageView.setLayoutParams(new GridView.LayoutParams(250, 250));
+            imageView.setLayoutParams(new GridView.LayoutParams(1200, 1200));
         }
         else
         {
